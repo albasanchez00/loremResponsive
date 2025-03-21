@@ -49,13 +49,12 @@ footer {
 
 nav {
   position: sticky;
-  width: 20%;
-  height: 20vh;
+  min-width: 20%;
+  max-height: 20vh;
   padding: 20px;
   background-color: #2ecc71;
   ul{
     list-style: none;
-    padding: 10px 0;
     font-size: 14px;
   }
 }
@@ -69,15 +68,15 @@ main {
 
 aside {
   position: sticky;
-    min-width: 20%;
-    max-height: 20vh;
-    box-sizing: border-box;
-    padding: 20px;
-    background-color: #e74c3c;
-    order: 1;
+  min-width: 20%;
+  max-height: 20vh;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: #e74c3c;
+  order: 1;
   ul{
     list-style: none;
-    padding: 10px 0;
+    font-size: 14px;
   }
 }
 
