@@ -21,17 +21,16 @@ header, footer {
   text-align: center;
 }
 header {
-  height: 15%;
+  min-height: 15%;
 }
 footer {
-  height: 5%;
+  min-height: 5%;
 }
 
 /* Contenedor principal */
 #section-container{
   display: flex;
   justify-content: center;
-  height: 80%;
   max-width: 100%;
   background-color: #ecf0f1;
 }
@@ -39,7 +38,6 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 100%;
   max-width: 80%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: white;
@@ -71,13 +69,12 @@ main {
 
 aside {
   position: sticky;
-  width: 20%;
-  height: 20vh;
-  box-sizing: border-box;
-  padding: 20px;
-  background-color: #e74c3c;
-
-  order: 1;
+    min-width: 20%;
+    max-height: 20vh;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #e74c3c;
+    order: 1;
   ul{
     list-style: none;
     padding: 10px 0;
@@ -98,7 +95,7 @@ aside {
 }
 
 
-@media screen and (max-width: 1022px) {
+@media screen and (max-width: 768px) {
   #section-container{
     display: flex;
     height: max-content;
